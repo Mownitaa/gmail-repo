@@ -11,12 +11,13 @@ nav{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 25px;
 }
 .logo img{
     padding-left: 15px;
@@ -32,7 +33,7 @@ nav{
     margin-left: 0px;
     padding:0px 10px;
     align-items: center;
-    color: #A7A9AC;
+    color: #525355;
     box-shadow: 1px 0px 3px gray;
 }
 .search-box> input{
@@ -43,14 +44,20 @@ nav{
     font-size:18px;
     padding-left: 15px;
 }
+.icons{
+    margin-right: 20px;
+}
 .icons i{
     padding-right:16px;
     font-size: 20px;
-    color: #A7A9AC;
+    color: #525355;
 }
 a{
     text-decoration:none;
     color: black;
+}
+li{
+    list-style: none;
 }
 .compose{
     width: 140px;
@@ -61,17 +68,45 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 6px 3px rgb(128, 128, 128);
+    box-shadow: 1px 1px 6px 3px rgba(128, 128, 128, 0.5);
 }
 .compose i{
-    color: blue;
+    /* background-image: linear-gradient(blue,yellow); */
     font-size: 30px;
     padding-right:15px;
+/* adding text gradient color */
+    background-image: linear-gradient(45deg, rgb(255, 0, 0), rgb(199, 187, 14));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 .compose a{
     display: flex;
     align-items: center;
    font-size: 17px;
+}
+.inbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(255, 192, 203, 0.527);
+    border-radius: 20px;
+    color:rgb(231, 44, 75);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    position:relative;
+    margin-left: -21px;
+    font-weight: 700;
+}
+.inbox a{
+    color: rgb(231, 44, 75);
+    margin-left: -80px;
+    
+}
+.inbox span{
+    margin-right:-30px;
 }
 .container{
    
@@ -79,13 +114,61 @@ a{
     /* background-color: pink;; */
 }
 .box{
-    width: 260px;
+    width: 250px;
     height:100%;
     padding-right: 20px;
 }
 .box-1{
-    padding-left: 30px;
+  
+    padding-left: 10px;
 }
 .box-2{
-    flex-grow: 1;
+    flex-grow: 6;
+}
+
+
+.lists li{
+    width:78%;
+    height:35px;
+    border-radius: 30px;
+    box-shadow:1px 1px 2px rgba(128, 128, 128, 0.233);
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:53px;
+    text-align: justify;
+}
+.lists i{
+   padding-right: 10px;
+}
+.lists{
+    margin-left: -60px;
+}
+.meet, .hangout{
+    margin-left: 30px;
+}
+.meet a{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.meet i{
+    padding-right:10px;
+}
+.hangout span{
+   padding-right: 40px;
+}
+.hangout i{
+    padding-right: 10px;
+}
+.chat-alert{
+    /* position: relative; */
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 100px;
+}
+#new-chat-alert{
+    color: blue;
 }
